@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 interface iContactMe {
   extraClass?: string | null;
@@ -47,7 +48,13 @@ const ContactMe: React.FC<iContactMe> = ({ extraClass }) => {
             </svg>
           </div>
           <p className="py-4 mt-1">Call me at: (971) 998 - 2695</p>
-          <p className="">Email me at: vietnguyent22@gmail.com</p>
+          <p className="py-4 mb-3">Email me at: vietnguyent22@gmail.com</p>
+          <Link
+            href="https://www.linkedin.com/in/vietnguyen-dev/"
+            className="link"
+          >
+            Message me on LinkedIn
+          </Link>
         </div>
         <form method="dialog" className="modal-backdrop">
           <button>close</button>

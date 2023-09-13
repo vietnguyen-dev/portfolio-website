@@ -20,7 +20,7 @@ export default function ModeSwitch() {
   };
 
   return (
-    <div className="fixed bottom-0 right-0 m-4">
+    <div className="fixed bottom-0 right-0 m-2">
       <label className="swap swap-rotate">
         {/* this hidden checkbox controls the state */}
         <input type="checkbox" onClick={handleToggle} />

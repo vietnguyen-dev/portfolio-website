@@ -1,12 +1,12 @@
 import { iExperience } from "@/pages";
 
-interface iSkills {
+export interface iSkillsComponent {
   skills: string[];
 }
 
-const Skill: React.FC<iSkills> = ({ skills }) => {
+export const Skill: React.FC<iSkillsComponent> = ({ skills }) => {
   return (
-    <div className="mt-2">
+    <div className="mt-2 mb-3">
       {skills.map((skill) => (
         <div className="badge badge-accent mr-1" key={skill}>
           {skill}
@@ -23,7 +23,9 @@ interface iExperienceComponent {
 const Experience: React.FC<iExperienceComponent> = ({ data }) => {
   return (
     <div className="px-6 pt-6 pb-8 sm:px-12 sm:py-6" id="experience">
-      <h3 className="text-xl mt-3">EXPERIENCE</h3>
+      <h3 className="text-xl sticky top-0 py-4 bg-base-100 bg-opacity-90 w-11/12">
+        EXPERIENCE
+      </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {data.map((job) => (
           <div className="py-5 max-w-xs mb-3" key={job.id}>
