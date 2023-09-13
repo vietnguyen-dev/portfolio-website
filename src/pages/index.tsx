@@ -49,8 +49,8 @@ const Home: React.FC<iHomeProps> = ({ experience, project }) => {
       <main className={`${inter.className} xl:w-3/4 xl:mx-auto`}>
         <Navbar />
         <Hero />
-        <Experience data={experience} />
         <Projects />
+        <Experience data={experience} />
       </main>
       <footer className="footer p-10 bg-neutral text-neutral-content">
         <aside>
