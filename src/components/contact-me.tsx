@@ -8,18 +8,21 @@ interface iContactMe {
 const ContactMe: React.FC<iContactMe> = ({ extraClass }) => {
   return (
     <>
-      <button
-        className={`btn btn-primary ${extraClass && extraClass}`}
-        onClick={() => {
-          if (document) {
-            (
-              document.getElementById("contact-me") as HTMLFormElement
-            ).showModal();
-          }
-        }}
-      >
-        Contact Me
-      </button>
+      <div className="md:flex justify-center">
+        <button
+          className={`btn btn-primary ${extraClass && extraClass} `}
+          onClick={() => {
+            if (document) {
+              (
+                document.getElementById("contact-me") as HTMLFormElement
+              ).showModal();
+            }
+          }}
+        >
+          Contact Me
+        </button>
+      </div>
+
       <dialog id="contact-me" className="modal">
         <div className="modal-box">
           <div className="flex">

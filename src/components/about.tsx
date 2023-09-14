@@ -8,12 +8,12 @@ interface iAboutComponent {
 
 const About: React.FC<iAboutComponent> = ({ data }) => {
   return (
-    <div className="px-6 pt-6 pb-8 sm:px-12 sm:py-6" id="about">
-      <h3 className="text-xl  sticky top-0 py-4 bg-base-100 bg-opacity-90 w-11/12">
-        About
+    <div className="px-6 py-8 mb-6" id="about">
+      <h3 className="text-xl sticky top-0 py-4 bg-base-100 bg-opacity-90 w-11/12 md:text-center md:w-full">
+        ABOUT ME
       </h3>
-      <p>{data[0].attributes.about}</p>
-      <p className="my-3">{data[0].attributes.cta}</p>
+      <p className="md:mx-auto md:w-1/2">{data[0].attributes.about}</p>
+      <p className="my-3 md:mx-auto md:w-1/2">{data[0].attributes.cta}</p>
       <ContactMe />
     </div>
   );

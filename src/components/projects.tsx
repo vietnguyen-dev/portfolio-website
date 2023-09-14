@@ -10,13 +10,16 @@ interface iProjectsComponent {
 
 const Projects: React.FC<iProjectsComponent> = ({ data }) => {
   return (
-    <div className="px-6 py-6 sm:px-12 sm:py-6 mb-6" id="projects">
-      <h3 className="text-xl sticky top-0 py-4 bg-base-100 bg-opacity-90 w-11/12">
+    <div className="px-6 py-8 mb-3" id="projects">
+      <h3 className="text-xl sticky top-0 py-4 bg-base-100 bg-opacity-90 w-11/12 md:w-full md:text-center">
         FREELANCE PROJECTS
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {data.map((project) => (
-          <div className="py-5 max-w-xs mb-3" key={project.id}>
+          <div
+            className="py-5 max-w-xs mb-3 md:m-3 md:mx-auto"
+            key={project.id}
+          >
             <Image
               src={`/${project.attributes.image_name}`}
               width={300}
@@ -31,7 +34,10 @@ const Projects: React.FC<iProjectsComponent> = ({ data }) => {
               {project.attributes.description}
             </p>
             <Skill skills={project.attributes.skills.skills} />
-            <Link className="link" href={project.attributes.live_url}>
+            <Link
+              className="link underline-offset-4"
+              href={project.attributes.live_url}
+            >
               View Live Here
             </Link>
           </div>

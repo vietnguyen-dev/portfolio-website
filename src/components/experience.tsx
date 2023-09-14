@@ -22,8 +22,8 @@ interface iExperienceComponent {
 
 const Experience: React.FC<iExperienceComponent> = ({ data }) => {
   return (
-    <div className="px-6 pt-6 pb-8 sm:px-12 sm:py-6" id="experience">
-      <h3 className="text-xl sticky top-0 py-4 bg-base-100 bg-opacity-90 w-11/12">
+    <div className="px-6 py-8 mb-3" id="experience">
+      <h3 className="text-xl sticky top-0 py-4 bg-base-100 bg-opacity-90 w-11/12 md:w-full md:text-center">
         EXPERIENCE
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
