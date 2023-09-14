@@ -18,11 +18,11 @@ export const Navbar = () => {
         <p className="text-xl font-bold">VN</p>
       </Link>
       <div className="hidden md:block">
-        <Link href="/#experience" className="mr-3 hover:link xl:mr-6">
-          Experience
-        </Link>
         <Link href="/#projects" className="mr-3 hover:link xl:mr-6">
           Freelance Projects
+        </Link>
+        <Link href="/#experience" className="mr-3 hover:link xl:mr-6">
+          Experience
         </Link>
         <Link href="/#about" className="mr-3 hover:link xl:mr-6">
           About
